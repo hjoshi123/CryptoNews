@@ -22,6 +22,3 @@ android:
     # if you need to run emulator(s) during your tests
     - sys-img-armeabi-v7a-android-26
     - sys-img-armeabi-v7a-android-17
-  env:
-    global:
-      - NewsApiKey=7294ae9e09eb42fea84f71d723c0dbba
