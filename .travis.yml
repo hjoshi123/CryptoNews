@@ -1,24 +1,16 @@
 language: android
 android:
   components:
-    # Uncomment the lines below if you want to
-    # use the latest revision of Android SDK Tools
-    # - tools
-    # - platform-tools
-
-    # The BuildTools version used by your project
-    - build-tools-26.0.2
-
-    # The SDK version used to compile your project
-    - android-26
-
-    # Additional components
-    - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-    - addon-google_apis-google-26
-
-    # Specify at least one system image,
-    # if you need to run emulator(s) during your tests
-    - sys-img-armeabi-v7a-android-26
-    - sys-img-armeabi-v7a-android-17
+  - build-tools-26.0.2
+  - android-26
+  - extra-google-google_play_services
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - addon-google_apis-google-26
+  - sys-img-armeabi-v7a-android-26
+  - sys-img-armeabi-v7a-android-17
+env:
+  global:
+    secure: BDzb/tzJmBlKGnUmHtK8/3kCYAvOWJQqq90UQ8MVaP44GNMaYeeXdhRIpldMoPJf964WoJ4AdEPukHPaz0AFgh2J2ORXo4KhKaOpUqJ5fQ4b1BFwl3tp8TaueS3Iz3En/YNbUWIhlP//tYUNKNFVYxov3Bi0XK+QJPp3GG8Rpes60KDh5gjgsy3hd8Tf7LCTZ1duopPcqLWeHeFUJd3/+v+DolDhF/MxTzJnW4HA8Wuw1nWvU1fZFNwzbw0dUVZuLPuhi8CfHEd8JXV38x9rxnCARJaeV6akmfcaaMthU5J99nlVViEy3vaqJkY/8TQzXnlp4861rMAxV35el3uXI9MglywFljFucpggSugp5ArFH55BCrHK9Wuo9MXuUvVVXFdXN7eN14nFIHDaAaUz8x2QBZ9CRLUS/6zVYkVGjr5nSEDTJyVISxEBTVqcAoP/ryPLx9VvlODsr6jSbe6CxHS1IK5oHrEMklZFl5MRKEJV8GuKMmgQfrn5tKlKGpwtRUUiREIFcw9DfB+YK3BHrj2KQKblxIzWaZVWQX1i9R2D7zREcd7Z95xYmGs9zHHhlNgv74Pepu+aPsdpsyDbXIIMSx2xRVmosFVUfmfP52eFM/62zpK+3BzflUn4/uT4M7GgAvurUEZqHG/SrSdzzaxzYui0aAPa5PTDFCri5rc=
+  matrix:
+    secure: sXrgqSSCB8xta/VtyuYb9WbYxAeUouW1nS4J1/qT81zqRiXl/M2O3vrjzFYYG2vUen+Ap2Y3C8F1cIVblol99+MBl003Wl0zGA/Nk4vTSslF9q5iEKZZPQg1OGotXCPET5qn6ZWwMQIDeo8R+IowDXtVctOENU0ocRvoOPhrjHa5hZXKGFqA2CcBvSqf5VVHSjzcid6n9ShJF1s8fyi1MHIaI6Mx4jF9fjBhFEIuMEczmVP9tjs/HfLfKz6IruHYpNnnLSaD7WlkHCm1ButS7tYtn+Oi8shxBsfpGZHhlP12xMlIqT2q1BLQn8au+9r4SRFFB64TxZdLWhciZdh7nRe2mqxpPy8w85UhWxbDzHWwP7G9rnPAWw/AI7ypD9erAbtX5u4RUqln+buOnb9nd5DAsqnEHrd8AD8i5IJOVPrmB5CfnpY2zk0qF3TAOk0eoWKmkky6sGxYyK2lARqquQuP3SKjQlUkYH+NTwS9eJIr1FO0F8I2Qy75FqCbiBFHYZeKYRrWVUEeOhmER32mLQd5yIUv3m23ipk7EBBByLzk9WRoS9xtd0GoJxpNSkOiazs022q/vM1GK7PdBJXaY5JitYZpkDF7vhjeF2oPQMf1hJEWJae7FJ0y5hLWp7EC/ayLPlyDYTYZ5o7YifzivQwZkIfQMZUxLEQg1Jo+UjQ=
