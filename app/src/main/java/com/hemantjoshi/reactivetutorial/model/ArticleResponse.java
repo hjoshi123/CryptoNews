@@ -2,7 +2,7 @@ package com.hemantjoshi.reactivetutorial.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by HemantJ on 07/01/18.
@@ -10,9 +10,9 @@ import java.util.ArrayList;
 
 public class ArticleResponse {
     @SerializedName("articles")
-    private ArrayList<Article> articles;
+    private List<Article> articles;
 
-    public ArrayList<Article> getArticles(){
+    public List<Article> getArticles(){
         return articles;
     }
 }

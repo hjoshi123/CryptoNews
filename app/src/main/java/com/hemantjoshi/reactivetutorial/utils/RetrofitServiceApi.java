@@ -1,10 +1,8 @@
 package com.hemantjoshi.reactivetutorial.utils;
 
-import com.hemantjoshi.reactivetutorial.model.Article;
 import com.hemantjoshi.reactivetutorial.model.ArticleResponse;
 
 import io.reactivex.Flowable;
-import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
@@ -14,6 +12,6 @@ import retrofit2.http.Query;
 
 public interface RetrofitServiceApi {
 
-    @GET("top-headlines")
+    @GET("everything")
     Flowable<ArticleResponse> queryReddit(@Query("sources") String sources);
 }

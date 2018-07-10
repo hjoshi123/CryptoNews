@@ -15,7 +15,6 @@ import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
 import timber.log.Timber;
 
-//TODO hide the API key
 @Module(includes = ContextModule.class)
 public class OkHttpClientModule {
 
@@ -54,9 +53,7 @@ public class OkHttpClientModule {
 
     @Provides
     public HttpLoggingInterceptor httpLoggingInterceptor(){
-        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(message -> {
-            Timber.d(message);
-        });
+        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor(message -> Timber.d(message));
 
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         return httpLoggingInterceptor;

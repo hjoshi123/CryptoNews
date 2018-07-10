@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fav"
+        android:title="Favorites"
+        android:icon="@drawable/ic_signal_wifi_off_white_36dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:showAsAction="always" />
+</menu>

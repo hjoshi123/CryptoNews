@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="380dp"
-    xmlns:cardView="http://schemas.android.com/apk/res-auto"
-    cardView:cardCornerRadius="16dp"
-    cardView:cardElevation="8dp"
-    android:layout_margin="8dp">
+    android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        tools:src="@drawable/ic_launcher_background"
+        android:layout_margin="8dp"
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
 
-        <ImageView
-            android:id="@+id/thumbnail"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_alignParentTop="true"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="Image" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/thumbnail"
-            android:maxLines="3"
-            android:padding="8dp"
-            android:text="Title"
-            android:textColor="#222"
+            tools:text="Lorem ipsum Loremupsim Lorem upsim"
+            android:textSize="17sp"
             android:textStyle="bold"
-            android:textSize="22sp" />
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:id="@+id/desc"
+            tools:text="Hemant Joshi"
+            android:textSize="15sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/title"
-            android:maxLines="3"
-            android:padding="8dp"
-            android:text="Description"
-            android:textColor="#666"
-            android:textSize="14sp" />
+            android:layout_height="wrap_content" />
 
-    </RelativeLayout>
-</android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <CheckBox
+        android:stateListAnimator="@animator/scale"
+        android:layout_margin="8dp"
+        android:id="@+id/favClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:button="@null"
+        android:focusable="true"
+        android:background="@drawable/like_icon" />
+
+</LinearLayout>
