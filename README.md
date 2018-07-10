@@ -1,4 +1,4 @@
-# CryptoNews [![Build Status](https://travis-ci.com/hjoshi123/CryptoNews.svg?token=SYsx8xiDLudxiCyLpckN&branch=master)](https://travis-ci.com/hjoshi123/CryptoNews)
+# CryptoNews [![Build Status](https://travis-ci.org/hjoshi123/CryptoNews.svg?branch=master)](https://travis-ci.org/hjoshi123/CryptoNews)
 
 An android application to get crypto currency related news. Built for [RxJava Series](https://android.jlelse.eu/be-reactive-develop-your-next-app-with-rxjava-5b51ed9b4c39).  
 
