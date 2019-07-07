@@ -5,7 +5,6 @@ An android application to get crypto currency related news. Built for [RxJava Se
 ## Tech Used
 * RxJava
 * Retrofit
-* Room
 * Dagger 2
 
 ## Features:
